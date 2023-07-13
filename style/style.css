@@ -1,0 +1,33 @@
+hr {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto;
+    border-top: 1px solid #ffffff;
+}
+
+.bg-red {
+    background-color: rgb(180, 0, 0);
+}
+
+.btn-red {
+    background-color: rgb(180, 0, 0);
+    color: #ffffff;
+}
+
+.btn-red:hover {
+    background-color: rgb(180, 0, 0, 0.680);
+}
+
+.bg-offwhite {
+    background-color: rgb(232, 232, 232);
+}
+
+.bg-form {
+    background-color: rgb(180, 0, 0);
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}
+
+.btn-form-submit {
+    background-color: white;
+    color: rgb(180, 0, 0)ñ;
+}

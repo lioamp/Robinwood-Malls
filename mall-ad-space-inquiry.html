@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+    <head>
+        <title>Robinwood Malls</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/x-icon" href="https://i.imgur.com/EbczVTCs.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style\style.css">
+    </head>
+
+    <body>
+        <!-- Part that contains the logo -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-red length ">
+            <div class="container-fluid">
+                <div class="container text-center">
+                    <!-- Logo, which is also clickable -->
+                    <a class="navbar-brand" href="index.html">
+                        <img class="img-fluid" src="https://i.imgur.com/XWqTLru.png" width="500px">
+                    </a>
+                </div>
+            </div>
+        </nav>
+        
+        <!-- This code make the nav bar turn into the collapsible thing when the screen size is small-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-red">
+            <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <!-- The actual navbar links-->
+            <div class="container-fluid">
+                <div class="container">
+                    <div class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <!-- Nav Link 1-->
+                            <li class="nav-item my-1 mx-2 text-center">
+                                <a class="nav-link text-white" href="index.html">Home</a>
+                            </li>
+                            <!-- Nav Link 2-->
+                            <li class="nav-item my-1 mx-2 text-center">
+                                <a class="nav-link disabled text-white" href="#">Virtual Mall Directory</a>
+                            </li>
+                            <!-- Nav Link 3 -->
+                            <li class="nav-item my-1 mx-2 text-center">
+                                <a class="nav-link disabled text-white" href="#">Promo & Events</a>
+                            <!-- Nav Link 4 -->
+                            <li class="nav-item my-1 mx-2 text-center">
+                                <a class="nav-link text-white" href="lease-inquiry.html">Lease Inquiry</a>
+                            <!-- Nav Link 5 -->
+                            <li class="nav-item my-1 mx-2 text-center">
+                                <a class="nav-link text-white" href="mall-ad-space-inquiry.html">Mall AD Space Inquiry</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    <!-- Mall AD Space Inquiry Form -->
+    <div class="container-fluid">
+        <br>
+        <div class="container text-center text-white bg-form p-5">
+            <p class="h1 pt-4">MALL AD SPACE INQUIRY</p>
+            <p class="h5 p-4">Please use below form to submit your Mall AD Space Inquiry or email us at leasing@robindaughtersland.com. Thank you!</p>
+            <hr>
+            <br>
+            <form>
+                <!-- Name -->
+                <div class="row mb-2">
+                    <!-- First Name -->
+                    <div class="col-sm text-sm-start">
+                        <label for="firstname" class="form-label h5">First Name</label>
+                        <input type="text" class="form-control" id="firstname" required>
+                    </div>
+                    <!-- Middle Name -->
+                    <!-- Not required so doesn't have to be filled in -->
+                    <div class="col-sm text-sm-start">
+                        <label for="middlename" class="form-label h5">Middle Name</label>
+                        <input type="text" class="form-control" id="middlename">
+                    </div>
+                    <!-- Last Name -->
+                    <div class="col-sm text-sm-start">
+                        <label for="lastname" class="form-label h5">Last Name</label>
+                        <input type="text" class="form-control" id="lastname" required>
+                    </div>
+                </div>
+                <!-- Phone Number -->
+                <div class="row mb-2">
+                    <div class="col-sm text-sm-start">
+                        <label for="mobilenumber" class="form-label h5">Mobile Number</label>
+                        <input type="number" placeholder="+63" class="form-control" id="mobilenumber" required>
+                    </div>
+                </div>
+                <!-- Email -->
+                <div class="row mb-2">
+                    <div class="col-sm text-sm-start">
+                        <label for="email" class="form-label h5">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                </div>
+                <!-- Mall Location -->
+                <div class="row mb-2">
+                    <div class="col-sm text-sm-start">
+                        <div class="row my-1">
+                        <p class="h5">Robinsons Mall Location you are interested in</p>
+                        <div class="d-flex">
+                            <div class="form-check-inline">
+                                <input type="radio" class="form-check-input" name="Island" id="Luzon" required>
+                                <label for="Luzon" class="form-check-label">Luzon</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="radio" class="form-check-input" name="Island" id="Visayas" required>
+                                <label for="Visayas" class="form-check-label">Visayas</label>
+                            </div>
+                            <div class="form-check-inline">
+                                <input type="radio" class="form-check-input" name="Island" id="Mindanao" required>
+                                <label for="Mindanao" class="form-check-label">Mindanao</label>
+                            </div>
+                            <select class="form-select form-select-sm mb-3" aria-label=".form-select-lg example">
+                                <option selected>--Select--</option>
+                                <option value="1" hidden></option>
+                                <option value="2" hidden></option>
+                                <option value="3" hidden></option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                </div> 
+                <div class="row mb-2">
+                    <div class="col-sm text-sm-start">
+                        <label for="spacerequired" class="form-label h5">Type of space you require</label>
+                        <input type="text" class="form-control" placeholder="Enter type of space" id="spacerequired" required>
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col-sm text-sm-start">
+                        <label for="address" class="form-label h5">Business Details you would like to operate</label>
+                        <textarea class="form-control" id="address" rows="3" required></textarea>
+                    </div>
+                </div>
+                <div class="input-group-append pt-1">
+                    <button class="btn btn-form-submit" type="submit">SUBMIT</button>
+                </div>
+            </form>
+        </div>
+        <br>
+    </div>
+
+        <!-- Footer -->
+        <footer class="container-fluid bg-red text-white mt-auto">
+            <hr>
+            <div class="p-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <ul class="list-unstyled">
+                            <li>
+                                <a class="nav-link text-white text-decoration-none disabled" href="#">Partners</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-white text-decoration-none disabled" href="#">Terms and Services</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-white text-decoration-none disabled" href="#">Privacy Policy</a>
+                            </li>
+                            <li>
+                                <a class="nav-link text-white text-decoration-none disabled" href="#">Careers</a>
+                            </li>
+                            <li>
+                                <a class="text-white text-decoration-none" href="about-us.html">About Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 text-center">
+                        <a class="gap-1" href="#">
+                            <i class="fab fa-facebook-f">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                                </svg>
+                            </i>
+                        </a>
+                        <a href="#">
+                            <i class="fab fa-twitter">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-twitter" viewBox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                                </svg>
+                            </i>
+                        </a>
+                        <a class="gap-1" href="#">
+                            <i class="fab fa-instagram">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="white" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                                </svg>
+                            </i>
+                        </a>
+                    </div>
+                    <div class="col-lg-4">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Subscribe to our Newsletter:</label>
+                                <div class="input-group">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                                </div>
+                                <div class="input-group-append pt-1">
+                                    <button class="btn btn-success" type="submit">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>    
+        </footer>
+
+        <script>
+            // Get the radio buttons and select element
+            const radioButtons = document.getElementsByName('Island');
+            const selectElement = document.querySelector('select');
+        
+            // Add event listeners to radio buttons
+            radioButtons.forEach(radioButton => {
+                radioButton.addEventListener('change', updateSelectOptions);
+            });
+        
+            // Function to update select options
+            function updateSelectOptions() {
+                // Get the value of the selected radio button
+                const selectedIsland = document.querySelector('input[name="Island"]:checked').id;
+        
+                // Clear existing options
+                selectElement.innerHTML = '';
+
+                // Add default option
+                const defaultOption = document.createElement('option');
+                defaultOption.selected = true;
+                defaultOption.disabled = true;
+                defaultOption.textContent = '--Select--';
+                selectElement.appendChild(defaultOption);
+        
+                // Add new options based on the selected radio button
+                //Luzon
+                if (selectedIsland === 'Luzon') {
+                    const option1 = document.createElement('option');
+                    option1.value = '1';
+                    option1.textContent = 'Robinwood Sta. Rosa';
+                    selectElement.appendChild(option1);
+        
+                    const option2 = document.createElement('option');
+                    option2.value = '2';
+                    option2.textContent = 'Robinwood Las Piñas';
+                    selectElement.appendChild(option2);
+        
+                    const option3 = document.createElement('option');
+                    option3.value = '3';
+                    option3.textContent = 'Robinwood Manila';
+                    selectElement.appendChild(option3);
+                }
+                //Visayas
+                else if (selectedIsland === 'Visayas') {
+                    const option1 = document.createElement('option');
+                    option1.value = '1';
+                    option1.textContent = 'Robinwood Cebu';
+                    selectElement.appendChild(option1);
+        
+                    const option2 = document.createElement('option');
+                    option2.value = '2';
+                    option2.textContent = 'Robinwood Dumaguete';
+                    selectElement.appendChild(option2);
+        
+                    const option3 = document.createElement('option');
+                    option3.value = '3';
+                    option3.textContent = 'Robinwood Iloilo';
+                    selectElement.appendChild(option3);
+                } 
+                //Mindanao
+                else if (selectedIsland === 'Mindanao') {
+                    const option1 = document.createElement('option');
+                    option1.value = '1';
+                    option1.textContent = 'Robinwood Davao';
+                    selectElement.appendChild(option1);
+        
+                    const option2 = document.createElement('option');
+                    option2.value = '2';
+                    option2.textContent = 'Robinwood Cagayan de Oro';
+                    selectElement.appendChild(option2);
+        
+                    const option3 = document.createElement('option');
+                    option3.value = '3';
+                    option3.textContent = 'Robinwood Valencia';
+                    selectElement.appendChild(option3);
+                }
+            }
+
+            function createOption(value, text) {
+                    const option = document.createElement('option');
+                    option.value = value;
+                    option.textContent = text;
+                    return option;
+            }
+        </script>
+
+        <script>
+            // Get the form and submit button
+            const form = document.querySelector('form');
+            const submitButton = document.querySelector('button[type="submit"]');
+        
+            // Add event listener to form submission
+            form.addEventListener('submit', function(event) {
+            // Check if any required fields are empty
+            const requiredFields = document.querySelectorAll('[required]');
+            let hasEmptyFields = false;
+        
+            requiredFields.forEach(field => {
+                if (field.value.trim() === '') {
+                hasEmptyFields = true;
+                }
+            });
+        
+            // If there are empty required fields, prevent form submission and display alert
+            if (hasEmptyFields) {
+                event.preventDefault();
+                alert('Please fill in all required fields.');
+            } else {
+                // If all fields are filled, display success message and clear the form
+                event.preventDefault();
+                alert('Form submitted successfully!');
+                form.reset();
+        
+                // Reset the select element and rehide the options
+                selectElement.selectedIndex = 0;
+                const options = selectElement.querySelectorAll('option');
+                options.forEach(option => {
+                option.hidden = true;
+                });
+            }
+            });
+        </script>
+    </body> 
+</html>
